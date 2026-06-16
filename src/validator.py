@@ -18,7 +18,6 @@ except Exception:
     _HAS_SOCKS = False
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
 
 
 async def _check_proxy_http(session: aiohttp.ClientSession, proxy: str, timeout: int = 10, retries: int = 1) -> Dict:
