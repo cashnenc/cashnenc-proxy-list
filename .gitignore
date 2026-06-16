@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / optimized
+__pycache__/
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+.env
