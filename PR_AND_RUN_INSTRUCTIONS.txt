@@ -1,0 +1,23 @@
+# Minimal instructions: how to open PR and run CI locally
+
+# Open PR (browser)
+# 1. Visit: https://github.com/cashnenc-web/cashnenc-proxy-list/compare/main...fix/validator-formatter-ci
+# 2. Click "Create pull request"
+# 3. Set title: fix: validator/formatter + CI improvements
+# 4. Paste PR body (provided in previous assistant message) and submit
+
+# Open PR (CLI)
+# gh pr create --base main --head fix/validator-formatter-ci --title "fix: validator/formatter + CI improvements" --body-file pr_body.txt
+
+# Trigger CI manually (Actions UI)
+# 1. Go to Actions -> CI workflow
+# 2. Click "Run workflow" -> select branch fix/validator-formatter-ci -> Run workflow
+
+# Run locally
+# git fetch origin fix/validator-formatter-ci
+# git checkout fix/validator-formatter-ci
+# python -m pip install --upgrade pip
+# pip install -r requirements.txt
+# pip install ruff pytest
+# ruff src
+# pytest -q
